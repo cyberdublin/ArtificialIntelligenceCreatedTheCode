@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Enemies of Everybody</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #FF5733, #FFBD33, #33FF57, #33FFBD, #5733FF, #BD33FF);
+      background-size: 600% 600%;
+      animation: gradientBG 10s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    main {
+      padding-top: 80px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    section h2 {
+      margin-top: 0;
+    }
+
+    .music-player {
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Enemies of Everybody</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#shows">Shows</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to The Enemies of Everybody</h2>
+      <p>We are a band that defies genres and conventions. Join us on a journey of musical exploration!</p>
+    </section>
+
+    <section id="music">
+      <h2>Music</h2>
+      <div class="music-player">
+        <!-- HTML5 Audio Player -->
+        <audio controls>
+          <source src="song.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <p>Listen to our latest tracks and albums. Stay tuned for more!</p>
+    </section>
+
+    <section id="shows">
+      <h2>Shows</h2>
+      <p>Check back soon for upcoming shows and events. We might be playing near you!</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="image-gallery">
+        <!-- Add images of the band performing or album covers -->
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+      <p>Explore moments captured during our performances and behind the scenes.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have a question or want to book us for a gig? Reach out to us:</p>
+      <ul>
+        <li>Email: info@enemiesofeverybody.com</li>
+        <li>Phone: +1 (555) 123-4567</li>
+        <li>Follow us on social media:</li>
+        <li>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 The Enemies of Everybody. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add fun javascript tools here, e.g., a random background color changer
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    setInterval(function() {
+      document.body.style.backgroundColor = getRandomColor();
+    }, 3000); // Change background color every 3 seconds
+  </script>
+</body>
+</html>
 
