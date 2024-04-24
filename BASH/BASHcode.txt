@@ -1,1 +1,3 @@
-
+AI is useful to create code sections but it is no sustitute for an experienced programmer
+For quick and easy HTML it works quiet well
+It is decent with BASH scripts and Python too
